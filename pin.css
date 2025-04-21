@@ -1,0 +1,96 @@
+/* Styles for the PIN page */
+@font-face {
+    font-family: 'Admire';
+    src: url('./admire.otf') format('opentype');
+  }
+  
+  body {
+    font-family: 'Admire', cursive;
+    background: linear-gradient(135deg, #ffe6f2 0%, #fff1e6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .pin-container {
+    background-color: #FFF7F0;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    width: 350px;
+    max-width: 100%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #FFB3C6;
+    margin-bottom: 20px;
+  }
+  
+  #pinInput {
+    width: 80%;
+    padding: 15px;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #FFB3C6;
+    border-radius: 12px;
+    text-align: center;
+    letter-spacing: 12px;
+    background-color: #fff1e6;
+    color: #5C4033;
+    transition: border-color 0.3s ease;
+  }
+  #pinInput:focus {
+    border-color: #D96F4C;
+    outline: none;
+  }
+  
+  .pin-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .pin-btn {
+    padding: 20px;
+    font-size: 2rem;
+    border: 2px solid #FFB3C6;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #FFB3C6;
+    color: white;
+    font-family: 'Admire', cursive;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .pin-btn:hover {
+    background-color: #FFB3C6;
+    transform: scale(1.05);
+  }
+  
+  #submitPinBtn {
+    grid-column: span 3;
+    padding: 15px;
+    font-size: 1.5rem;
+    background-color: #FFB3C6;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: 'Admire', cursive;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  #submitPinBtn:hover:not(:disabled) {
+    background-color: #FFB3C6;
+    transform: scale(1.02);
+  }
+  
+  #submitPinBtn:disabled {
+    background-color: #F2C1CF;
+    cursor: not-allowed;
+  }  

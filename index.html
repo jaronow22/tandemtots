@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TandemTots</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>TandemTots</h1>
+        <p>To my everything and more. Happy two year <3</p>
+    </header>
+    
+    <div class="toggle-container">
+        <label for="fontToggle">From: </label>
+        <select id="fontToggle">
+            <option value="josh">Josh</option>
+            <option value="ella">Ella</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <!-- Most Recent Received Note Section -->
+        <div class="most-recent-note">
+            <h2>Most Recent Note:</h2>
+            <p id="recentMessage"></p>
+            <p id="recentTimestamp"></p>
+        </div>
+        
+        <!-- Note input section -->
+        <div class="note-section">
+            <h2>Your Note:</h2>
+            <textarea id="userMessage" placeholder="Write a note here..." rows="4"></textarea>
+            <button id="submitMessageBtn" class="submit-btn">Send Message</button>
+        </div>
+
+        <!-- Timeline for past messages -->
+        <div class="timeline">
+            <h3>Message Timeline:</h3>
+            <ul id="notesTimeline">
+                <!-- Past messages will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>To a lifetime of waking up to you, whether together or apart</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
